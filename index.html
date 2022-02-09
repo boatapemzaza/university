@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="axios.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html">
+            <img src="./img/logo.png">
+        </a>
+        <span>ศูนย์การเรียนรู้เกษตรผสมผสาน มหาวิทยาลัยราชภัฏวิทยาเขตโป่งสลอด</span>
+        
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="./index.html">หน้าหลัก</a></li>
+                <li><a href="./about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="#footer">ติดต่อ</a></li>
+                <li class="hero-btn"><a href="./trip.php">จองทริป</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1 id="HEADER_FIRST">"พอเพียง"</h1>
+        <p id="HEADER_SECOND">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi natus accusantium hic veniam, sunt illo vel eaque! Architecto eos optio, saepe quos maxime error. Dolore quaerat eius harum. Sit, quod.
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div> 
+
+</section>
+
+<!-- Course -->
+
+<section class="course">
+    <h1 id="CONTENT_FIRST">ศูนย์เรียนรู้เกษตรผสมผสานตามแนวพระราชดำริ วิทยาเขตโป่งสลอด</h1>
+    <p id="CONTENT_SECOND">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3 id="TITLE_BOX_FIRST">ข้อมูล1</h3>
+            <p id="DATA_BOX_FIRST">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptates eaque sed ullam impedit earum nesciunt a similique. Sint, modi maiores? Quis, consequuntur nesciunt natus accusamus ullam itaque quisquam exercitationem?
+            </p>
+        </div>
+        <div class="course-col">
+            <h3 id="TITLE_BOX_SECOND">ข้อมูล2</h3>
+            <p id="DATA_BOX_SECOND">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptates eaque sed ullam impedit earum nesciunt a similique. Sint, modi maiores? Quis, consequuntur nesciunt natus accusamus ullam itaque quisquam exercitationem?
+            </p>
+        </div>
+        <div class="course-col">
+            <h3 id="TITLE_BOX_THIRD">ข้อมูล3</h3>
+            <p id="DATA_BOX_THIRD">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptates eaque sed ullam impedit earum nesciunt a similique. Sint, modi maiores? Quis, consequuntur nesciunt natus accusamus ullam itaque quisquam exercitationem?
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Campus -->
+
+<section class="campus">
+    <h1 id="PIC_LOCATION_FRIST">รูปภาพสถานที่โครงการ</h1>
+    <p id="PIC_LOCATION_SECOND">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptates eaque sed ullam impedit earum nesciunt a similique. Sint, modi maiores? Quis, consequuntur nesciunt natus accusamus ullam itaque quisquam exercitationem?
+    </p>
+    <div class="row">
+        <div class="campus-col">
+            <img id="PIC_IMAGE_FIRST" src="./img/t1.jpeg">
+            <div class="layer">
+                <h3 id="PIC_TITLE_FIRST">หุบกระพง</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img id="PIC_IMAGE_SECOND" src="./img/t2.jpeg">
+            <div class="layer">
+                <h3 id="PIC_TITLE_SECOND">เขาใหญ่</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img id="PIC_IMAGE_THIRD" src="./img/t3.png">
+            <div class="layer">
+                <h3 id="PIC_TITLE_THIRD">เชียงใหม่</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Facilities -->
+
+<section class="facilities">
+
+    <h1 id="DATA_TITLE">ข้อมูลโครงการ</h1>
+    <p id="DATA_COMMENT">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsum! Vel aut, et cum molestias nobis sed distinctio culpa velit unde. Aliquam ad quidem officia nisi repellat, iste doloribus molestias.
+    </p>
+    <div class="row">
+        <div class="facilities-col">
+            <img id="PRO_IMAGE_FIRST" src="./img/k1.jpeg">
+            <h3 id="PRO_TITLE_FIRST">World Class Library</h3>
+            <p id="PRO_COMMENT_FIRST">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis, aut tempore nulla, corrupti consectetur sunt voluptas asperiores eum debitis adipisci veniam ducimus sapiente magni minus rem facere odio ex.
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img id="PRO_IMAGE_SECOND" src="./img/k2.png">
+            <h3 id="PRO_TITLE_SECOND">World Class Library</h3>
+            <p id="PRO_COMMENT_SECOND">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis, aut tempore nulla, corrupti consectetur sunt voluptas asperiores eum debitis adipisci veniam ducimus sapiente magni minus rem facere odio ex.
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img id="PRO_IMAGE_THIRD" src="./img/k3.jpeg">
+            <h3 id="PRO_TITLE_THIRD">World Class Library</h3>
+            <p id="PRO_COMMENT_THIRD">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis, aut tempore nulla, corrupti consectetur sunt voluptas asperiores eum debitis adipisci veniam ducimus sapiente magni minus rem facere odio ex.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!--- testimonials --->
+
+<section class="testimonials">
+    <h1 id="COM_TITLE">ความคิดเห็นคนเข้าร่วมโครงการ</h1>
+    <p id="COM_COMMENT">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, vel! Distinctio possimus voluptate quo tenetur reiciendis, nulla, quis voluptas porro quos alias fugiat omnis laborum reprehenderit voluptatibus. Minus, officiis quis.
+    </p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img id="COM_IMAGE_FIRST" src="./img/user1.jpeg">
+            <div>
+                <p id="COM_COMMENT_FIRST">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, tempora pariatur inventore nam voluptatem architecto corporis doloremque aliquid incidunt vero cupiditate optio facilis harum autem perferendis accusamus adipisci. Fuga, necessitatibus!
+                </p>
+                <h3 id="COM_NAME_FIRST">นางสมศรี ยอมดี</h3>
+                <span id="COM_SYMBOL_FIRST">
+
+                </span>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img id="COM_IMAGE_SECOND" src="./img/user2.jpeg">
+            <div>
+                <p id="COM_COMMENT_SECOND">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, tempora pariatur inventore nam voluptatem architecto corporis doloremque aliquid incidunt vero cupiditate optio facilis harum autem perferendis accusamus adipisci. Fuga, necessitatibus!
+                </p>
+                <h3 id="COM_NAME_SECOND">นายปรีดี ย้อมตู่</h3>
+                <span id="COM_SYMBOL_SECOND">
+
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Call To Action -->
+
+<section class="cta">
+    <h1>When people put the environment first<br>development will last </h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<!-- Footer -->
+
+<section id="footer" class="footer">
+    <h4>ติดต่อเรา</h4>
+    <p id="CONTACT">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi illo consequatur a laudantium necessitatibus esse veritatis ab adipisci reprehenderit incidunt architecto, ullam iusto amet! Cumque cupiditate earum iusto deserunt.
+    </p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>COPY RIGHT <i class="far fa-heart"></i> 2021</p>
+</section>
+
+<!-- Javascript Menu Troggle -->
+ <script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu() {
+        navLinks.style.right = "0px";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
